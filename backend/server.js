@@ -8,8 +8,15 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 
+// MongoDB connection details
+const DB_USER = 'admin';
+const DB_PASS = '9w7B75ltpoQx98i1';
+
+// MongoDB connection string
+const mongoURI = `mongodb+srv://${DB_USER}:${DB_PASS}@cluster0.7gciv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/invoiceDB', {
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

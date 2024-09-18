@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PDFViewer from './components/PDFViewer';
 import InvoiceForm from './components/InvoiceForm';
+import InvoiceDetails from './components/InvoiceDetails';
+import LineItemDetails from './components/LineItemDetails';
+import FooterActions from './components/FooterActions';
 
 class App extends Component {
   render() {
@@ -11,6 +14,9 @@ class App extends Component {
         </div>
         <div className="invoice-form">
           <InvoiceForm />
+          <InvoiceDetails />
+      <LineItemDetails />
+      <FooterActions />
         </div>
       </div>
     );
