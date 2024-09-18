@@ -13,7 +13,7 @@ const DB_USER = 'admin';
 const DB_PASS = '9w7B75ltpoQx98i1';
 
 // MongoDB connection string
-const mongoURI = `mongodb+srv://${DB_USER}:${DB_PASS}@cluster0.7gciv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const mongoURI = ``;
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, {
